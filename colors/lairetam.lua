@@ -7,7 +7,9 @@ vim.g.colors_name = "lairetam"
 
 -- Custom color palette
 local colors = {
+	bg = "#263238",
 	fg = "#CDD3DE",
+	cursorline_bg = "#37474F",
 	black = "#263238",
 	darker_black = "#1E282C",
 	red = "#E57373",
@@ -31,13 +33,6 @@ local colors = {
 
 -- Apply basic highlights
 vim.api.nvim_set_hl(0, "Normal", { fg = colors.fg, bg = colors.bg })
-vim.api.nvim_set_hl(0, "Comment", { fg = colors.comment, italic = true })
-vim.api.nvim_set_hl(0, "Keyword", { fg = colors.keyword, bold = true })
--- continue with more highlight groups
-
--- Custom color overrides
-vim.api.nvim_set_hl(0, "Normal", { fg = colors.fg, bg = colors.bg })
---vim.api.nvim_set_hl(0, "Normal", { fg = colors.fg })
 
 -- Comments
 vim.api.nvim_set_hl(0, "Comment", { italic = true, fg = colors.grey })
@@ -47,7 +42,7 @@ vim.api.nvim_set_hl(0, "@comment.block", { italic = true, fg = colors.grey })
 
 -- Line numbers
 vim.api.nvim_set_hl(0, "LineNr", { fg = colors.grey, bg = "NONE" })
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.fg, bg = "NONE" })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.sun, bg = "NONE" })
 
 -- Syntax highlighting with custom colors
 vim.api.nvim_set_hl(0, "String", { fg = colors.green })
@@ -62,7 +57,7 @@ vim.api.nvim_set_hl(0, "Conditional", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "Repeat", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "Label", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "Operator", { fg = colors.cyan })
-vim.api.nvim_set_hl(0, "Keyword", { fg = colors.purple })
+vim.api.nvim_set_hl(0, "Keyword", { fg = colors.purple, bold = true })
 vim.api.nvim_set_hl(0, "Exception", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "PreProc", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "Include", { fg = colors.purple })
@@ -124,7 +119,7 @@ vim.api.nvim_set_hl(0, "Visual", { bg = colors.dark_grey })
 vim.api.nvim_set_hl(0, "VisualNOS", { bg = colors.dark_grey })
 vim.api.nvim_set_hl(0, "Search", { fg = colors.darker_black, bg = colors.yellow })
 vim.api.nvim_set_hl(0, "IncSearch", { fg = colors.darker_black, bg = colors.sun })
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursorline_bg })
 vim.api.nvim_set_hl(0, "CursorColumn", { bg = colors.black })
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = colors.black })
 vim.api.nvim_set_hl(0, "VertSplit", { fg = colors.black, bg = "NONE" })
