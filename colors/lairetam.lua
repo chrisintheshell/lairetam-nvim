@@ -42,7 +42,7 @@ vim.api.nvim_set_hl(0, "@comment.line", { italic = true, fg = colors.grey })
 vim.api.nvim_set_hl(0, "@comment.block", { italic = true, fg = colors.grey })
 
 -- Line numbers
-vim.api.nvim_set_hl(0, "LineNr", { fg = colors.grey, bg = "NONE" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = colors.dark_grey, bg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.fg, bg = "NONE" })
 
 -- Syntax highlighting with custom colors
