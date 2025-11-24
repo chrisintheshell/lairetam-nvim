@@ -10,6 +10,7 @@ local colors = {
 	bg = "#263238",
 	fg = "#CDD3DE",
 	cursorline_bg = "#37474F",
+	visual_bg = "#455A64",
 	black = "#263238",
 	darker_black = "#1E282C",
 	red = "#E57373",
@@ -26,9 +27,9 @@ local colors = {
 	teal = "#4DB6AC",
 	orange = "#FFB74D",
 	cyan = "#4DD0E1",
-	grey = "#65737E",
-	light_grey = "#A0A8B7",
-	dark_grey = "#4B5263",
+	light_grey = "#78909C",
+	grey = "#607D8B",
+	dark_grey = "#546E7A",
 }
 
 -- Apply basic highlights
@@ -115,8 +116,8 @@ vim.api.nvim_set_hl(0, "Pmenu", { fg = colors.fg, bg = colors.darker_black })
 vim.api.nvim_set_hl(0, "PmenuSel", { fg = colors.darker_black, bg = colors.blue })
 vim.api.nvim_set_hl(0, "PmenuSbar", { bg = colors.black })
 vim.api.nvim_set_hl(0, "PmenuThumb", { bg = colors.grey })
-vim.api.nvim_set_hl(0, "Visual", { bg = colors.dark_grey })
-vim.api.nvim_set_hl(0, "VisualNOS", { bg = colors.dark_grey })
+vim.api.nvim_set_hl(0, "Visual", { bg = colors.visual_bg })
+vim.api.nvim_set_hl(0, "VisualNOS", { bg = colors.visual_bg })
 vim.api.nvim_set_hl(0, "Search", { fg = colors.darker_black, bg = colors.yellow })
 vim.api.nvim_set_hl(0, "IncSearch", { fg = colors.darker_black, bg = colors.sun })
 vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursorline_bg })
